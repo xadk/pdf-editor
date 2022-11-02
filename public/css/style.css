@@ -1,0 +1,353 @@
+:root {
+  --bs-blue: #4582ec;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #e83e8c;
+  --bs-red: #d9534f;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #f0ad4e;
+  --bs-green: #02b875;
+  --bs-teal: #20c997;
+  --bs-cyan: #17a2b8;
+  --bs-black: #000;
+  --bs-white: #fff;
+  --bs-gray: #868e96;
+  --bs-gray-dark: #343a40;
+  --bs-gray-100: #f8f9fa;
+  --bs-gray-200: #e9ecef;
+  --bs-gray-300: #ddd;
+  --bs-gray-400: #ced4da;
+  --bs-gray-500: #adb5bd;
+  --bs-gray-600: #868e96;
+  --bs-gray-700: #495057;
+  --bs-gray-800: #343a40;
+  --bs-gray-900: #212529;
+  --bs-primary: #4582ec;
+  --bs-secondary: #adb5bd;
+  --bs-success: #02b875;
+  --bs-info: #17a2b8;
+  --bs-warning: #f0ad4e;
+  --bs-danger: #d9534f;
+  --bs-light: #f8f9fa;
+  --bs-dark: #343a40;
+  --bs-primary-rgb: 69, 130, 236;
+  --bs-secondary-rgb: 173, 181, 189;
+  --bs-success-rgb: 2, 184, 117;
+  --bs-info-rgb: 23, 162, 184;
+  --bs-warning-rgb: 240, 173, 78;
+  --bs-danger-rgb: 217, 83, 79;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 52, 58, 64;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 0, 0, 0;
+  --bs-body-color-rgb: 52, 58, 64;
+  --bs-body-bg-rgb: 255, 255, 255;
+  --bs-font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1.1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #343a40;
+  --bs-body-bg: #fff;
+  --bs-border-width: 1px;
+  --bs-border-style: solid;
+  --bs-border-color: #ddd;
+  --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+  --bs-border-radius: 0.375rem;
+  --bs-border-radius-sm: 0.25rem;
+  --bs-border-radius-lg: 0.5rem;
+  --bs-border-radius-xl: 1rem;
+  --bs-border-radius-2xl: 2rem;
+  --bs-border-radius-pill: 50rem;
+  --bs-link-color: #4582ec;
+  --bs-link-hover-color: #3768bd;
+  --bs-code-color: #e83e8c;
+  --bs-highlight-bg: #fcefdc;
+}
+
+:root {
+  --color-highlight: #0db4ce;
+  --color-highlight-accent: #19647e;
+  --color-highlight-hover: #19647e;
+  --color-highlight-secondary: #eec643;
+
+  --color-primary-bg: #1a1d21;
+  --color-primary-fg: #d1d2d3;
+  --color-inverted-bg: #d1d2d3;
+  --color-inverted-fg: #1a1d21;
+
+  --color-foreground-max: #9a9c9e;
+  --color-foreground-high: #75777a;
+  --color-foreground-low: #323538;
+  --color-foreground-min: #212428;
+}
+
+:root {
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-gray: #757575;
+  --bs-gray-dark: #4f4f4f;
+  --bs-primary: #1266f1;
+  --bs-secondary: #b23cfd;
+  --bs-success: #00b74a;
+  --bs-info: #39c0ed;
+  --bs-warning: #ffa900;
+  --bs-danger: #f93154;
+  --bs-light: #fbfbfb;
+  --bs-dark: #262626;
+  --bs-white: #fff;
+  --bs-black: #000;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  background-color: var(--color-primary-bg);
+}
+
+/*
+ * Globals
+ */
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+/*
+ * Base structure
+ */
+
+html {
+  min-height: 100%;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+}
+
+.cover-container {
+  max-width: 100em;
+}
+
+/* main {
+} */
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+  border-bottom: 0.25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, 0.25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*
+ * Content
+ */
+
+.content {
+  width: 590px;
+  max-width: 100%;
+  text-align: left !important;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+.CodeMirror {
+  height: auto !important;
+  border-radius: 5px;
+}
+.CodeMirror-sizer {
+  /* padding-bottom: 10px !important; */
+  padding-bottom: 0 !important;
+}
+.CodeMirror-scroll {
+  min-height: 200px;
+}
+
+/**
+ * Uppy
+ */
+.uppy-Dashboard-inner {
+  border: none !important;
+}
+
+.cm-s-dracula .CodeMirror-gutters,
+.cm-s-dracula.CodeMirror,
+.cm-s-dracula.CodeMirror-lint-tooltip {
+  background-color: #1f1f1f !important;
+  color: #f8f8f2 !important;
+}
+
+.cm-s-dracula.CodeMirror,
+.cm-s-dracula.CodeMirror-lint-tooltip {
+  border: 1px dashed #5d5d5d !important;
+}
+
+controller button {
+  background-color: #1c8b37;
+  padding: 15px 10px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  color: inherit;
+  display: inline-flex;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1;
+  transition-duration: 0.3s;
+  transition-property: background-color, color;
+  -webkit-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+}
+
+controller button:hover {
+  background-color: #18762f;
+}
+
+result {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1f1f1f !important;
+  color: #f8f8f2 !important;
+  border: 1px dashed #5d5d5d !important;
+  border-radius: 5px;
+}
+
+result .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 12px;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #2e2e2e !important;
+  border-radius: 7px;
+}
+
+result .item:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+result .item.item-downloaded {
+  background: rgb(103 244 137 / 11%);
+}
+
+result .item .pdf-icon {
+  width: 50px;
+  height: 50px;
+}
+
+result .item span {
+  max-width: 100px;
+  word-break: break-word;
+  margin-top: 20px;
+}
+
+@media (max-width: 750px) {
+  controller {
+    justify-content: center !important;
+  }
+}

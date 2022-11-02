@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap");
+html {
+  height: 100%;
+}
+
+.content {
+  text-align: left !important;
+}
+/*****************
+CODE MIRROR STYLES 
+*****************/
+.cm-s-berry-dark.CodeMirror {
+  font-size: 14px;
+  background: #272757;
+  box-shadow: 2px 2px 10px #111139 inset;
+  font-family: "Source Code Pro", monospace;
+  color: #aaa;
+}
+.cm-s-berry-dark .CodeMirror-cursor {
+  height: 17px;
+  margin-top: 4px;
+}
+.cm-s-berry-dark .CodeMirror-gutters {
+  background: #343470;
+  border-right: 1px solid #343470;
+  box-shadow: 2px 0px 10px #111139;
+  margin-left: -1px;
+}
+.cm-s-berry-dark .CodeMirror-sizer {
+  padding-top: 5px;
+  margin-left: 31px;
+  margin-bottom: -17px;
+  border-right-width: 13px;
+  min-height: 29px;
+  min-width: 7px;
+  padding-right: 20px;
+  padding-bottom: 0px;
+  padding-left: 5px;
+}
+.cm-s-berry-dark .CodeMirror-line {
+  line-height: 1.7;
+}
+.cm-s-berry-dark .CodeMirror-linenumber {
+  color: #777aaa;
+  left: 0px;
+  width: 24px;
+  margin-left: -5px;
+}
+.cm-s-berry-dark .CodeMirror-linenumbers {
+  width: 31px;
+}
+.cm-s-berry-dark .cm-qualifier {
+  color: #75bfff;
+}
+.cm-s-berry-dark .cm-property {
+  color: #86de74;
+}
+.cm-s-berry-dark .cm-punctuation,
+.cm-unit,
+.cm-negative {
+  color: #e09142;
+}
+.cm-s-berry-dark .cm-string {
+  color: #6b89ff;
+}
+.cm-s-berry-dark .cm-positive {
+  color: #6a51e6;
+}
+.cm-s-berry-dark .cm-def {
+  color: #ddd;
+}
+.cm-s-berry-dark .cm-variable {
+  /* 	color: #ccc !important; */
+  color: #ddd;
+}
+.cm-s-berry-dark .cm-variable-2,
+.cm-s-berry-dark .cm-variable-3,
+.cm-s-berry-dark .cm-url {
+  color: #6a51e6;
+}
+.cm-s-berry-dark .cm-tag {
+  color: #75bfff;
+}
+.cm-s-berry-dark .cm-bracket {
+  color: #75bfff;
+}
+.cm-s-berry-dark .cm-comment {
+  color: #777aaa;
+}
+.cm-s-berry-dark .cm-atom,
+.cm-s-berry-dark .cm-number {
+  color: #6b89ff;
+}
+.cm-s-berry-dark .cm-keyword,
+.cm-s-berry-dark .cm-operator,
+.cm-s-berry-dark .cm-attribute {
+  color: #ff7de9;
+}
+.cm-s-berry-dark .CodeMirror-cursor {
+  border-left: 1px solid #eee;
+}
+.cm-s-berry-dark .CodeMirror-selectedtext,
+.cm-s-berry-dark .CodeMirror-selected,
+.cm-s-berry-dark .CodeMirror-focused .CodeMirror-selectedtext,
+.cm-s-berry-dark .cm-s-berry-dark .CodeMirror-focused .CodeMirror-selected {
+  background: rgba(255, 74, 174, 0.1);
+}
+/* .CodeMirror-selected {
+	background: rgba(200,200,200,0.1) !important;
+} */
+.cm-s-berry-dark .CodeMirror-activeline-background {
+  background: transparent;
+}
+.cm-s-berry-dark .CodeMirror-focused .CodeMirror-activeline-background {
+  background: rgba(150, 70, 255, 0.1);
+}
+.cm-s-berry-dark .CodeMirror-matchingbracket {
+  color: inherit;
+}
+.cm-s-berry-dark .CodeMirror-focused .CodeMirror-matchingbracket,
+.cm-s-berry-dark .CodeMirror-focused .CodeMirror-matchingtag.cm-tag {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 2px;
+  padding-bottom: 3px;
+}
+.cm-s-berry-dark .CodeMirror-focused .CodeMirror-matchingtag.cm-tag {
+  padding-bottom: 1px;
+}
+.cm-s-berry-dark .CodeMirror-matchingtag,
+.cm-s-berry-dark .CodeMirror-matchingtag.cm-bracket {
+  background: transparent;
+}
+.cm-s-berry-dark .CodeMirror-focused .CodeMirror-matchingtag.cm-bracket {
+  background: transparent;
+}
+
+.cm-s-berry-dark .cm-searching {
+  /* 	color: #eee !important; */
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+/****************
+EDITOR SCROLL BAR
+****************/
+.CodeMirror-scrollbar-filler {
+  background: transparent;
+}
+.CodeMirror-vscrollbar-filler,
+.CodeMirror-hscrollbar-filler {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  border-radius: 0 0 5px 0;
+  z-index: 2;
+}
+.CodeMirror-vscrollbar-filler {
+  width: 10px;
+  top: 70px;
+}
+.CodeMirror-hscrollbar-filler {
+  left: 30px;
+  height: 10px;
+}
+/* width */
+.CodeMirror-vscrollbar::-webkit-scrollbar {
+  width: 6px !important;
+}
+.CodeMirror-hscrollbar::-webkit-scrollbar {
+  height: 6px !important;
+}
+/* Track */
+.CodeMirror-vscrollbar::-webkit-scrollbar-track,
+.CodeMirror-hscrollbar::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+/* Handle */
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb,
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb {
+  background: #111139 !important;
+  border-radius: 3px;
+}
+/* Handle on hover */
+.CodeMirror-vscrollbar::-webkit-scrollbar-thumb:hover,
+.CodeMirror-hscrollbar::-webkit-scrollbar-thumb:hover {
+  background: #11111f !important;
+}
