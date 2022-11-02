@@ -29,7 +29,7 @@ app.post(
         let ref = url.parse(rawRef);
         let opts = JSON.parse(
           Buffer.from(
-            ref.query.replaceAll(/^\??options\=/g, ""),
+            ref.query.replace(/^\??options\=/g, ""),
             "base64"
           ).toString()
         );
